@@ -1,0 +1,12 @@
+<div class="controller-container">
+  <div class="card card--big centered">
+    <div class="card__image" style="background-image: url({{vm.article.urlToImage}});"></div>
+    <h2 class="card__title">{{vm.article.title}}</h2>
+    <p class="card__text">{{vm.article.text}}...</p>
+    <div class="card__action-bar">
+      <a class="card__button" ng-link="['ArticlesDetails', {id: vm.article._id}]">View</a>
+      <a class="card__button" ng-link="['ArticleFormPage', {mode: 'edit', id: vm.article._id}]">Edit</a>
+      <button class="card__button">Delete</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<form name="articleForm">
+  
+  <div input-element
+    form-invalid="articleForm.Title.$error.required && articleForm.Title.$dirty"
+    form-type="text"
+    form-id="title"
+    form-value="vm.article.title"
+    form-label="Title"></div>
+  
+
+  <div text-element
+    form-invalid="articleForm.Text.$dirty && (articleForm.Text.$error.required || articleForm.Text.$error.customMinLength)"
+    form-id="text"
+    form-rows="10"
+    form-value="vm.article.text"
+    form-label="Text"></div>
+
+  <div file-element
+    form-id="file"
+    form-preview="vm.article.urlToImage"
+    form-file-url="{{vm.article.urlToImage}}"
+    form-value="vm.article.file"
+    form-onload="vm.onUploadFile()"
+    form-label="Logo"></div>
+
+  <button type="type" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+    ng-disabled="articleForm.$invalid"
+    ng-click="vm.submit()">{{vm.mode === 'add' ? 'Add' : 'Edit'}}</button>
+</form>

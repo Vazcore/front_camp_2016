@@ -1,0 +1,12 @@
+<h4>List of Articles</h4>
+<div class="overflow-hidden" ng-cloak>
+  <div ng-repeat="article in vm.articles track by $index">
+    <article-preview article="article"></article-preview>
+  </div>
+</div>
+
+<ag-pagination total-pages="vm.navigationInfo.totalPages"
+  shown-pages="vm.navigationInfo.shownPages" 
+  current="vm.navigationInfo.current"
+  clicks="vm.navigationInfo.clicks"
+  on-navigate="vm.onNavigate()"></ag-pagination>

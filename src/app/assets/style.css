@@ -1,0 +1,67 @@
+#content {
+  padding: 12px;
+}
+
+.page-content {
+  padding: 20px;
+}
+
+.errors{
+  list-style: none;
+}
+
+.controller-container.full-width {
+  width: 100% !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.error input, .error textarea {
+  border: 1px solid red;
+}
+
+.card.full-width {
+  width: 100% !important;
+}
+
+.centered {
+  text-align: center;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.mdl-textfield.full-width {
+  width: 100%;
+}
+
+
+.errors li{
+  color: red;
+  padding: 9px;
+  background-color: pink;
+}
+
+.news_block {
+  float: left;
+  margin: 15px;
+}
+
+.img_in_text {
+  max-width: 40%;
+}
+
+.news_block img {
+  width: 100%;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.navigation {
+  float: right;
+}

@@ -1,0 +1,5 @@
+<ul class="pagination" ng-init="vm.init()">    
+  <li ng-repeat="page in vm.pages" ng-class="{'active disabled': vm.current == page.id}" class="waves-effect">
+    <a ng-click="vm.navigate(page.id)">{{page.id}}</a>
+  </li>    
+</ul>
